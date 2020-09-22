@@ -1,1 +1,3 @@
-Hello!git
+Hello!
+
+I am excited to start Codeup!
