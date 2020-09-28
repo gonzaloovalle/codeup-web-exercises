@@ -1,3 +1,5 @@
+"use strict"
+
 console.log("Hello Eric");
 console.log("Hello Bill");
 console.log("Hello Joe");
