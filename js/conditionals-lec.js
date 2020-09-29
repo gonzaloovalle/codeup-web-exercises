@@ -428,11 +428,27 @@ switch(weather){
 
 //TODO: Rewrite the intersection function from earlier as a switch statement.
 
-var
+    function trafficLight(color) {
+        switch (color) {
+            case "red":
+                alert("Stop when approaching a red light at an intersection");
+                break;
+            case "yellow":
+                alert("Slow down when approaching a yellow light at an intersection");
+                break;
+            case "green":
+                alert("Keep going when approaching a green light at an intersection");
+                break;
+            default:
+                alert("I've never seen that color on a traffic light!");
+                break;
+        }
+    }
 
-
-
-
+    console.log(trafficLight("red"));
+    console.log(trafficLight("yellow"));
+    console.log(trafficLight("green"));
+    console.log(trafficLight("blue"));
 
 // ================ REVERSE ENGINEERING =================
 // Visit each of these links, outline the steps required to achieve each of these demonstrations. You can write code or just write the logic steps that would achieve each output
