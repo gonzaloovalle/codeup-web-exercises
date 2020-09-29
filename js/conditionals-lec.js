@@ -270,20 +270,20 @@ console.log("hello from conditionals lec.js!");
 
 //TODO Together: refactor the above statement as a function
 
-// function checkWeather(weather) {
-//     if (weather === "snowing") {
-//         return "It's snowing!";
-//     } else if (weather === "raining") {
-//         return "It's raining!";
-//     } else {
-//         return "have a nice day";
-//     }
-// }
-//
-//     console.log(checkWeather("windy"));
-//     console.log(checkWeather("sunny"));
-//     console.log(checkWeather("snowing"));
-//     console.log(checkWeather("raining"));
+function checkWeather(weather) {
+    if (weather === "snowing") {
+        return "It's snowing!";
+    } else if (weather === "raining") {
+        return "It's raining!";
+    } else {
+        return "have a nice day";
+    }
+}
+
+    console.log(checkWeather("windy"));
+    console.log(checkWeather("sunny"));
+    console.log(checkWeather("snowing"));
+    console.log(checkWeather("raining"));
 
 
 // Together: PIZZA PREFERENCE EXAMPLE
