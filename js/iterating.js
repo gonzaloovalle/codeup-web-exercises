@@ -61,7 +61,7 @@
      *  > last([1, 2, 3, 4, 5]) // return 5
      */
 
-    var arr = [1,2,3,4,5];
+
 
     function firstItem(arr){
         return arr[0];
@@ -75,7 +75,7 @@
         return arr[arr.length - 1];
     }
 
-    console.log(firstItem(arr));
-    console.log(secondItem(arr));
-    console.log(lastItem(arr));
+    console.log(firstItem(names));
+    console.log(secondItem(names));
+    console.log(lastItem(names));
 })();
