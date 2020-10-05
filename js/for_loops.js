@@ -2,13 +2,13 @@
     "use strict"
 
 
-    // function showMultiplicationTable(x){
-    //     for (var i = 1; i <= 10; i++){
-    //
-    //     }
-    // }
+    function showMultiplicationTable(x){
+        for (var n = 1; n <= 10; n++){
+            console.log(x + " x " + n + " = " + (x * n));
+        }
+    }
 
-
+    console.log(showMultiplicationTable(7));
 
 
     for (var i = 0; i < 10; i++){
