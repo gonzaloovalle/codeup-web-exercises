@@ -212,3 +212,8 @@ favoriteFoods.forEach(function(favoriteFood){
     console.log("This is one of my favorite foods: " + favoriteFood + ".");
 })
 
+
+
+
+
+
