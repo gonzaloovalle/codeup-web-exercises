@@ -49,11 +49,21 @@
      * and console.log the relevant messages for each person
      */
 
-    // var shoppers = [
-    //     {name: 'Cameron', amount: 180},
-    //     {name: 'Ryan', amount: 250},
-    //     {name: 'George', amount: 320}
-    // ];
+    var shoppers = [
+        {name: 'Cameron', amount: 180},
+        {name: 'Ryan', amount: 250},
+        {name: 'George', amount: 320}
+    ];
+
+    shoppers.forEach(function(shopper){
+        var discountPrice = (shopper.amount - (shopper.amount * .12)).toFixed(2);
+        if (shopper.amount > 200) {
+            console.log(shopper.name + " your price before discount is: $" + shopper.amount + ", the discount is: $" + (shopper.amount * .12).toFixed(2) + ", price after discount is: $" + discountPrice + ".");
+        } else {
+            console.log("Sorry, you are not eligible for a discount " + shopper.name);
+        }
+    });
+
 
     /** TODO:
      * Create an array of objects that represent books and store it in a
@@ -67,6 +77,48 @@
      * > console.log(books[0].author.firstName) // "Douglas"
      * > console.log(books[0].author.lastName) // "Adams"
      */
+
+    var books = [
+        {
+            title: "Mort",
+            author: {
+                firstName: "Terry",
+                lastName: "Pratchett"
+            }
+        },
+        {
+            title: "Dune",
+            author: {
+                firstName: "Frank",
+                LastName: "Herbert"
+            }
+        },
+        {
+            title: "Magician",
+            author: {
+                firstName: "Raymond",
+                lastName: "Feist"
+            }
+        },
+        {
+            title: "Neuromancer",
+            author: {
+                firstName: "William",
+                lastName: "Gibson"
+            }
+        },
+        {
+            title: "Shadow and Claw",
+            author: {
+                firstName: "Gene",
+                lastName: "Wolfe"
+            }
+        }
+    ];
+
+    books.forEach(function(book){
+        console.log(book.title + " by " + book.author.firstName + " " + book.author.lastName);
+    });
 
     /**
      * TODO:
