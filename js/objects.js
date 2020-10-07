@@ -116,9 +116,6 @@
         }
     ];
 
-    books.forEach(function(book){
-        console.log(book.title + " by " + book.author.firstName + " " + book.author.lastName);
-    });
 
     /**
      * TODO:
@@ -144,6 +141,15 @@
      *      ---
      *      ...
      */
+
+
+    books.forEach(function(book, index){
+        console.log("Book # " + (index + 1));
+        console.log("Title: " + book.title);
+        console.log("Author: " + book.author.firstName + " " + book.author.lastName);
+
+    });
+
 
     /**
      * Bonus:
