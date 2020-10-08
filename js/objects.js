@@ -143,12 +143,7 @@
      */
 
 
-    books.forEach(function(book, index){
-        console.log("Book # " + (index + 1));
-        console.log("Title: " + book.title);
-        console.log("Author: " + book.author.firstName + " " + book.author.lastName);
-
-    });
+    books.forEach(showBookInfo);
 
 
     /**
@@ -161,5 +156,28 @@
      *   outputs the information described above. Refactor your loop to use your
      *   `showBookInfo` function.
      */
+
+    function createBook(title,first, last){
+        return {
+            title: title,
+            author: {
+                firstName: first,
+                lastName: last
+            }
+        };
+    }
+
+books.push(createBook("Cat's Cradle", "Kurt", "Vonnegut"));
+// books.push({})
+
+    console.log(books);
+
+    function showBookInfo(books, index){
+        console.log("Book # " + (index + 1));
+        console.log("Title: " + books.title);
+        console.log("Author: " + books.author.firstName + " " + books.author.lastName);
+        console.log("---");
+    }
+
 
 })();
