@@ -1,0 +1,46 @@
+# HTML Forms Pre Lesson
+1. What HTTP methods can we use in forms?
+GET, POST, and dialog
+
+2. What happens if we do not specify a method?
+It defaults to the GET method
+
+3. What is a `GET` method?
+A GET method is used to request information with out changing the data that is on the server. Any data the form sends will be put on the end of the url.
+
+4. What is a `POST` method?
+A POST method is used to make changes to data that exists on the server. The data will not be in the url and will instead be embedded in the HTTP request.
+
+5. What is the `action` attribute used for?
+The action attribute specifies where to send data to. If there is no location specified then the data will be sent back to the current url.
+
+6. What is a `query string`?
+A query string is made up of key-value pairs. Using the GET method the query string is put on the end of the url. With the POST method the query string is embedded in the  HTTP request.
+
+7. How are query strings structured?
+It starts with a ? then key=value then an & followed by more key-value pairs. 
+
+8. How do we submit a form?
+To submit there has to be either an button or other imput element with the type submit.
+
+9. What are some common form input elements?
+Textboxes, Textareas, Checkboxes and Radio Buttons, Selects, and Hidden Inputs
+
+10. How can we use name and value attributes?
+
+
+11. How do you disable an input?
+You add a disabled attribute to the input.
+
+12. How do you hide an input?
+
+
+13. What are `labels` used for?
+Labels are used to focus on specific input elements.
+
+Bonus
+* Describe the following:
+  *   Text Inputs: Basic text element with an input type of text
+  *   Text Areas: Used to allow for longer text inputs
+  *   Checkbox and Radio Buttons: Used for multiple choice or multiple answers
+  *   Selects: Used to create a drop down list of choices
