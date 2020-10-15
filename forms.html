@@ -8,6 +8,36 @@
     <title>Register With Us</title>
 </head>
 <body>
-
+    <main>
+        <form method="POST" action="https://request-inspector.glitch.me/">
+            <label for="email">Email</label>
+            <input type="text" name="email" id="email" placeholder="Enter your email address">
+            <hr>
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password" placeholder="Enter your password">
+            <hr>
+            <label for="bio">Bio</label>
+            <textarea name="bio"id="bio" placeholder="Write a short description..."></textarea>
+            <br>
+            <hr>
+            <fieldset>
+                <legend>How did you hear about us?</legend>
+                    <input type="radio" name="hear_about_us" id="hear_billboard" value="billboard"><label for="hear_billboard">Billboard</label><br>
+                    <input type="radio" name="hear_about_us" id="hear_radio" value="radio advertisement"><label for="hear_radio">Radio Advertisement</label><br>
+                    <input type="radio" name="hear_about_us" id="hear_internet" value="internet advertisement"><label for="hear_internet">Internet Advertisement</label><br>
+                    <input type="radio" name="hear_about_us" id="hear_other" value="other"><label for="hear_other">Other</label><br>
+            </fieldset>
+            <hr>
+            <label for="web_browser">Which web browser are you using?</label>
+            <select name="web_browser" id="web_browser">
+                <option value="chrome">Chrome</option>
+                <option value="safari">Safari</option>
+                <option value="firefox">Firefox</option>
+                <option value="other">Other</option>
+            </select>
+            <hr>
+            <button type="submit">Submit</button>
+        </form>
+    </main>
 </body>
 </html>
