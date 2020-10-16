@@ -1,3 +1,26 @@
-.fancy-header{
-    color:purple;
+
+h1{
+    text-align: center;
+    color: aquamarine;
+    text-decoration: underline;
+}
+h2{
+    color: aquamarine;
+    text-decoration: underline;
+}
+body{
+    background-color: #FFA384;
+}
+/*body{*/
+/*    background-image: url(../img/Beach.jpeg);*/
+/*    background-repeat: no-repeat;*/
+/*    background-size: cover;*/
+/*}*/
+
+ul{
+    list-style: square;
+}
+
+body{
+    font-family: Helvetica, Arial, SansSerif;
 }

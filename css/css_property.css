@@ -1,0 +1,15 @@
+div h1 {
+    letter-spacing: .2rem;
+}
+
+div h2 {
+    letter-spacing: normal;
+}
+
+div h3 {
+    letter-spacing: 1px;
+}
+
+div h4 {
+    letter-spacing: -1px;
+}
