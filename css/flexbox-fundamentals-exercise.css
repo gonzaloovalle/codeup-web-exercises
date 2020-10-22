@@ -36,7 +36,7 @@ h2, h3 {
     /* enter needed declarations here */
     display: flex;
     flex-direction: column;
-
+    justify-content: space-evenly;
 }
 
 section {
@@ -60,8 +60,6 @@ section:nth-of-type(1) div:last-child {
     background: fuchsia;
     width: 3em;
     height: 1em;
-    margin-top: 1em;
-    margin-bottom: .75em;
 }
 
 .purple-box:nth-of-type(1) {
@@ -95,7 +93,6 @@ section:nth-of-type(3) h3 {
     width: 2em;
     height: 2em;
     border-radius: 1em;
-    margin: .5em;
 }
 
 .large-brown-box {
@@ -119,7 +116,6 @@ section:nth-of-type(5) {
     background: yellow;
     width: 2em;
     height: 2em;
-    margin: .75em;
 }
 
 section:nth-of-type(6) {
