@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>jQuery Exercise</title>
+</head>
+<body>
+
+<h1 class="title codeup" id="greetings">Hello!</h1>
+
+<p class="paragraph codeup" id="intro">My name is Gonzalo. Now here is a list of some of my favorite foods in no particular order.</p>
+
+<ul class="list" id="food-list">
+    <li class="food" id="pizza">Pizza</li>
+    <li class="food" id="sushi">Sushi</li>
+    <li class="food" id="crawfish">Crawfish</li>
+    <li class="food" id="salmon">Salmon</li>
+    <li class="food codeup" id="meatball">Meatball Sub</li>
+</ul>
+
+<script src="js/jquery-3.5.1.js"></script>
+
+<script>
+
+    $(document).ready(function() {
+        "use strict";
+        // alert( 'The DOM has finished loading!' );
+
+        // var hello = $('#greeting').html();
+        // alert(hello);
+        //
+        // var paragraph = $('#intro').html();
+        // alert(paragraph);
+
+        // $('.codeup').css({"border-color": "red",
+        //     "border-weight":"1px",
+        //     "border-style":"solid"})
+
+        // $('li').css({"font-size": "20px"})
+        //
+        // var greeting= $('h1').html();
+        //
+        // $('p')
+
+        // alert(greeting);
+
+        $('li, h1, p').css({"font-size": "20px"});
+
+
+    });
+
+</script>
+
+</body>
+</html>
