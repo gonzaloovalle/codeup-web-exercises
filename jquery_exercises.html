@@ -9,7 +9,7 @@
 </head>
 <body>
 
-<h1 class="title codeup" id="greetings">Hello!</h1>
+<h1 class="title codeup" id="greeting">Hello!</h1>
 
 <p class="paragraph codeup" id="intro">My name is Gonzalo. Now here is a list of some of my favorite foods in no particular order.</p>
 
@@ -47,8 +47,21 @@
 
         // alert(greeting);
 
-        $('li, h1, p').css({"font-size": "20px"});
+        // $('li, h1, p').css({"font-size": "20px"});
 
+        $('h1').click(function() {
+            $(this).css('background', 'red');
+        });
+
+        $('p').dblclick(function(e) {
+            $(e.target).css('font-size', '18px');
+        });
+
+        $('li').hover(function(e) {
+            $(e.target).css('color', 'red');
+        } , function(e){
+            $(e.target).css('color', 'inherit');
+        });
 
     });
 
