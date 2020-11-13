@@ -5,9 +5,18 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Celestial Bodies</title>
+    <title>Celestial Bodies & National Parks</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/jquery_faq.css">
+    <style>
+        .invisible {
+            visibility: hidden;
+        }
+
+        .highlight {
+            background-color: yellow;
+        }
+
+    </style>
 </head>
 <body>
 
@@ -58,9 +67,34 @@
     <button id="showFaqs" class="show-faqs" type="submit">Show FAQs</button>
 </div>
 
+<br>
+<br>
 
+<h3>Arches</h3>
+<ul id="arches-national-park">
+    <li>Arches National Park comprises 76,519 acres or 119 square miles.</li>
+    <li>There are more than 2000 natural sandstone arches inside Arches National Park.</li>
+    <li>Landscape Arch has the longest span of any arch in North America, 306 feet (93.3 meters), and is the fourth longest in the world.</li>
+    <li>The enormous sandstone boulder atop Balanced Rock is presumed to weigh approximately 3,577 tons!</li>
+</ul>
+<h3>Badlands</h3>
+<ul id="badlands-national-park">
+    <li>Badlands National Park covers a total area of 244,300 acres.</li>
+    <li>Badlands was made a national park on November 10, 1978.</li>
+    <li>The name Badlands comes from the Lakota, who first called it “mako sica”, or “land that is bad”.</li>
+    <li>Badlands lies in an ecological area known as a mixed-grass prairie, in between tall-grass prairie to the east, and short-grass prairie to the west.</li>
+</ul>
+<h3>Carlsbad Caverns</h3>
+<ul id="carlsbad-national-park">
+    <li>The caves in Carlsbad Caverns are 56°F throughout the year, with high humidity.</li>
+    <li>The Big Room in Carlsbad Caverns, at 8.2 acres, is the largest accessible cave chamber in North America.</li>
+    <li>Although Carlsbad Caverns is rightly known for its famous caves, there are also more than 50 miles of aboveground trails that explore the desert landscape.</li>
+    <li>At present there are 117 known caves in the park, and more will be discovered.</li>
+</ul>
 
-
+<div>
+    <button id="highlighter" class="highlighter" type="submit">Highlight</button>
+</div>
 
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
@@ -70,9 +104,17 @@
     "use strict";
     $('#showFaqs').click(function(e){
         $('dd').toggleClass('invisible');
-    })
+    });
 
-    $('body').css('display', 'flex').css('flex-direction', 'column').css('text-align', 'center')
+    $('body').css('display', 'flex').css('flex-direction', 'column').css('text-align', 'center');
+
+    $('#highlighter').click(function(e){
+        $('ul').each(function(index){
+            $(this).last().toggleClass('highlight');
+        });
+    });
+
+
 </script>
 
 
