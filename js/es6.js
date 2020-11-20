@@ -95,10 +95,12 @@ users.forEach(function(user) {
   developers.push(name + '\'s email is ' + email + name + ' knows ' + languages.join(', '));
 });
 
-  developers.push(${name}, '\'s email is '${email}${name}, ' knows ', ${languages.join(', ')});
+  developers.push('${name} \'s email is ${email} ${name} knows ${languages.join(', ')}');
 
 // TODO: Use `let` for the following variable
-var list = '<ul>';
+// var list = '<ul>';
+
+let list = '<ul>';
 
 // TODO: rewrite the following loop to use a for..of loop
 developers.forEach(function (developer) {
@@ -107,3 +109,7 @@ developers.forEach(function (developer) {
   list += '<li>' + developer + '</li>';
 });
 list += '</ul>';
+
+for (let developer of developers) {
+  list += '<li>' developer '</li>';
+}
