@@ -36,17 +36,28 @@ const users = [
     }
 ];
 
-const multiLanguages = users.filter(function(languagesCount){
-        return languagesCount.languages >= languagesCount.languages;
-});
+const multiLanguages = users.filter(user => user.languages.length >= 3);
 
 console.log(multiLanguages);
 
-
-let emailsArray = {}
-
-let emails = users.map(function(email){
-    return emailsArray += email;
-});
+const emails = users.map(user => user.email);
 
 console.log(emails);
+
+const totalYears = users.reduce((accum, user) => {
+    return accum + user.yearsOfExperience;
+}, 0);
+
+console.log(totalYears);
+
+const longestEmail = users.reduce((accum, curr) => {
+    return (curr.email.length > accum.length) ? curr.email : accum;
+}, '');
+
+console.log(longestEmail);
+
+const userString = users.reduce((accum, {name}) => {
+    return accum + name + ", ";
+}, 'instructors are: ');
+
+console.log(userString);

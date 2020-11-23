@@ -141,10 +141,10 @@ console.log(sum);
 
 // TODO: Using .reduce, subtract all numbers in the numbers Array from a starting point of 100.
 
-const diff = numbersArray.reduce(function(currentDifference, currentNumber){
-    return currentDifference - currentNumber;
-}, 100);
-// const diff = numbersArray.reduce(currentDifference, currentNumber) => {currentDifference - currentNumber}, 100;
+// const diff = numbersArray.reduce(function(currentDifference, currentNumber){
+//     return currentDifference - currentNumber;
+// }, 100);
+const diff = numbersArray.reduce((currentDifference, currentNumber) => (currentDifference - currentNumber), 100);
 
 console.log(diff);
 
