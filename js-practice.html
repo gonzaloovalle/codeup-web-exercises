@@ -3,6 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <title>Javascript Practice</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+        $(function(){
+            $("a").click(function(){
+                var id= $(".id").html();
+                $('.myclass').html("<br><div class='new' id='" + id + "'>Hello</div>");
+            });
+        });
+    </script>
 </head>
 <body>
 
@@ -10,6 +19,12 @@
 <script src="js/js-practice/vowel-count.js"></script>
 <script src="js/js-practice/functions-practice.js"></script>
 <script src="js/js-practice/arrays-practice.js"></script>
+
+<div class="new">
+    <a href="#">Click me</a>
+    <div class="myclass"></div>
+    <div class="id">Tutorialspoint</div>
+</div>
 
 </body>
 </html>
